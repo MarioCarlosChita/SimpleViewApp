@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="indexcomponent.css" media="all" type="text/css">
+    <script src="https://unpkg.com/vue"></script>
+
+</head>
+<body>
+   
+
+
+
+  <div id="shopping-list">
+     <h1>Items Shoppings </h1> 
+     <button  @click="changeStateItem('edit')" class="adicionar"> Add Item </button>
+
+     <div class="formulario" v-if="status  === 'edit' "> 
+          <button @click="changeStateItem('default')" class="cancel">Cancel</button> 
+          <br>
+          <br>
+          <input type="text" v-model="newItem" placeholder="Add a new Items" @keyup.enter="saveItem" class="entrada">
+          {{CharacterCount}} /  100
+          <br>
+          <br>
+          <button type="submit" @click="saveItem"  :disabled="newItem.length === 0">Adicionar um Item</button>     
+     </div>
+
+  
+        <ul v-for ="item of reversedItems">
+             <p :class="[item.estado ? ' negritar':' naonegritar']"  @click="MudarMeuEstado(item)">{{item.name}}</p>
+             <br>
+        </ul> 
+        <p v-if="items.length === 0 " class="meuparagrafo"> Nice job! You've bought all  your Items.</p>
+       
+</div>
+  
+ <script src='indexcompoment.js'></script>
+ </body>
+
+ </html>

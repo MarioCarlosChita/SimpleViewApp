@@ -1,0 +1,61 @@
+*{
+  margin:0px;
+  padding:0px;
+  outline: none;    
+}
+ body{
+    padding:30px;
+ }
+ h1{
+      font-weight: bold;
+      font-family: monospace;
+       
+ }
+ #id-show{
+     padding:30px;    
+ }
+ .id-p{
+   color: red;
+   font-weight: bold;
+   font-size: 12px;
+ }
+ .meuparagrafo{
+     padding-top: 10px;
+ }
+
+ .cancel{
+        margin-top: 10px;
+       width:70px;
+       height: 40px;
+       border:none;
+       background-color:red;
+       border-radius: 10px;
+
+ }
+ .adicionar{
+  margin-top: 10px;
+  width:70px;
+  height: 40px;
+  border:none;
+  border-radius: 10px;
+  background-color:green;  
+ }
+
+ .entrada{
+       width: 300px;
+       height: 60px;
+       border:none ;
+       border-bottom-style: solid;
+       border-bottom-width: 2px;
+       border-bottom-color: green;
+       box-sizing: border-box;
+       padding-top: 10px;
+ }
+ .negritar{
+       color: black ;
+       font-weight: bold;
+       font-size: 14px;
+ } 
+ .naonegritar{
+      
+ }
